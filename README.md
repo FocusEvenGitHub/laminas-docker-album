@@ -2,6 +2,8 @@
 
 Este projeto é uma aplicação básica de listagem (CRUD) de albuns usando o **Laminas MVC**, rodando em **Docker**, com suporte a:
 
+![Screenshot da aplicação](data/screenshots/album-preview.png)
+
 - Banco de dados MySQL
 - Formulários (`laminas-form`)
 - Validação e filtros (`laminas-inputfilter`, `laminas-filter`)
