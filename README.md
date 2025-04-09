@@ -19,7 +19,7 @@ Este projeto é uma aplicação básica de listagem (CRUD) de albuns usando o **
 - Docker / Docker Compose
 
 ---
-
+ 
 ## ⚙️ Como rodar o projeto
 
 ### 1. Clone o repositório
