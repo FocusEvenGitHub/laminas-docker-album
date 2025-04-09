@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  laminas:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    container_name: laminas-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: meubanco
+      MYSQL_USER: laminas
+      MYSQL_PASSWORD: laminas123
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
